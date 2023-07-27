@@ -5,6 +5,7 @@
 // (a * b) if the value of c=3.
 // (a / b) if the value of c=4.
 
+package Array.Easy;
 import java.util.*;
 
 public class OperationChoices {
