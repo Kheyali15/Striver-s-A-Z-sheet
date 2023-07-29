@@ -1,4 +1,4 @@
-// package Array.Easy;
+package Array.Easy;
 
 import java.util.Scanner;
 
