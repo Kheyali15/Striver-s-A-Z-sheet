@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.*;
 
 public class FindAutoCount {
     public static boolean autobiographical(String str) {
@@ -21,13 +21,20 @@ public class FindAutoCount {
     }
 
     public static int findAutoCount(String str) {
-        int count = 0, 
-            num = Integer.parseInt(str);
+        int num = Integer.parseInt(str);
         
+        Set<Integer> set = new HashSet<>();
+
         if (autobiographical(str)) {
-            
+            while (num > 0) {
+              int r = num % 10;
+              set.add(r);
+              num /= 10;
+            }
+
+            return set.size();
         }
-        return count;
+        return 0;
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
