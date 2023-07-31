@@ -4,7 +4,7 @@ import java.util.*;
 
 class sortColors {
 
-    public static void sortColors(int[] nums, int length) {
+    public static void sortColors_(int[] nums, int length) {
         int low = 0,
             high = length - 1,
             mid = 0,
@@ -40,7 +40,7 @@ class sortColors {
             arr[i] = sc.nextInt();
         }
 
-        sortColors(arr, length);
+        sortColors_(arr, length);
 
         System.out.print("Sorted array : ");
         for (int i=0 ; i<length ; i++) {
